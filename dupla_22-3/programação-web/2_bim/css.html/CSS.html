@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é CSS?</title>
+
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+    }
+    body{
+        background: -o-linear-gradient(to bottom, #f4ffe8,#fffdf5);
+        color: #4d5b43;
+        padding: 30px;
+    }
+    .container{
+        max-width: 950px;
+        margin: auto;
+    }
+    .card{
+        background:#ffffffdd;
+        border: 3px solid #cfe7b5;
+        border-radius: 25px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 20px rgba(120,160,90,0.15);
+        
+    }
+
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        color: #6c9b57;
+        margin-bottom: 15px;
+    }
+    h2{
+        color: #7fa867;
+        margin-bottom: 15px;
+        font-size: 2rem;
+    }
+    p{
+        line-height: 1.9;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    ul{
+        margin-left: 25px;
+        margin-top: 15px;
+        line-height: 1.8;
+    }
+    .decor{
+        text-align: center;
+        font-size: 2rem;
+        margin: 15px 0;
+    }
+    .hightlight{
+        color: #5f8f49;
+        font-weight: bold;
+    }
+    .code-box{
+        background:#f7ffe9;
+        border: 2px dashed #b9d89d;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+        overflow-x: auto;    
+    }
+    pre{
+        color: #516445;
+        font-size: 1rem;
+    }
+    .little-box{
+        background:#eef8dd;
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+    .button{
+        display: inline-block;
+        margin-top: 20px;
+        background: #8bb174;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 999px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+    .button:hover{
+        background: #73995d;
+        transform: scale(1.05);
+    }
+    footer{
+        text-align: center;
+        margin-top: 30px;
+        color: #7c8f6f;
+        font-size: 0.9rem;
+    }
+    .emoji{
+        background:#ffffffdd;
+        border: 3px solid #cfe7b5;
+        border-radius: 25px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 20px rgba(120,160,90,0.15);
+        text-align: center;
+    }
+</style>    
+</head>
+<body>
+    <div class="container">
+        <h1>🌿O QUE É CSS?🌿</h1>
+        <div class="emoji">
+
+            🍃🐌🌱
+        </div>
+
+        <p>CSS significa
+            <span class="hightlight">
+                Cascading Style Sheets
+            </span>
+            ou "folhas em estilo de cascata".
+        </p>
+        <p>
+            O CSS é uma ferramenta usada para estilizar páginas HTML.
+        </p>
+        <p>
+            Enquanto o HTML cria a estrutura do site, o CSS deixa a página organizada e agradável ao olhar.
+        </p>
+        <p>
+            Com CSS podemos mudar:
+        </p>
+        <ul>
+            <li>🎨cores</li>
+            <li>🔤fontes</li>
+            <li>📏tamanhos</li>
+            <li>✨animações</li>
+            <li>📦espaçamento</li>
+            <li>📱organização da p</li>
+        </ul>
+        <div class="little-box">
+            🍄Sem CSS, os sites seriam muito simples e quase sem design.
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>🍄Seletores</h2>
+        <p>Os <span class="hightlight">seletores</span> servem para escolher quais elementos do HTML serão estilizados.</p>
+
+        <p>eles são a primeira parte do código CSS.</p>
+        <div class="code-box">
+            <pre>
+                h1{
+                    color: green;
+                }
+            </pre>
+        </div>
+        <div class="little-box">
+            🌱Nesse exemplo:
+            <br><br>
+
+            <b>h1</b> é o seletor <br>
+            todos os títulos h1 ficarão verdes
+        </div>
+        <p>
+        Alguns exemplos de seletores:
+        </p>
+        <ul>
+            <li><b>h1</b>→ títulos</li>
+            <li><b>p</b>→ parágrafos</li>
+            <li><b>body</b>→ corpo da página</li>
+        </ul>
+    </div>
+
+
+    <div class="card">
+        <h2>🪻Propriedades</h2>
+        <p>As <span class="hightlight">propriedades</span> dizem o que está no elemento.</p>
+
+        <p>Elas definem características como:</p>
+        <ul>
+            <li>🎨cor</li>
+            <li>📏tamanho</li>
+            <li>🔤fonte</li>
+            <li>🖼️fundo</li>
+        </ul>
+
+    <div class="code-box">
+        <pre>
+            p{
+                color: brown;
+                font-size: 20px;
+            }
+        </pre>
+    </div>
+    <div class="little-box">
+        🌱Nesse exemplo
+        <br><br>
+
+        <b>color</b> muda a cor do texto<br>
+        <b>font-size</b> muda o tamanho da fonte
+    </div>
+    </div>
+
+
+     <div class="card">
+        <h2>🌻Valores</h2>
+
+        <p>os <span class="hightlight">valores</span> definem como a propriedade ficará.</p>
+        <p>Cada propriedade precisa de um valor.</p>
+
+        <div class="code-box">
+            <pre>
+                h2{
+                    color: orange;
+                
+                }
+            </pre>
+        </div>
+        <div class="little-box">
+            🌱Nesse exemplo:
+            <br><br>
+
+            <b>color</b> é a propriedade<br>
+            <b>orange</b> é o valor
+        </div>
+
+        <p>Alguns exemplos de valores:</p>
+
+    <ul>
+        <li><b>red</b>→ vermelho</li>
+        <li><b>30px</b>→ tamanhos</li>
+        <li><b>center</b>→ alinhamento central</li>
+    </ul>
+    </div> 
+
+    <div class="card">
+        <h2>🌸Estrutura do CSS</h2>
+        <p>Todo código CSS segue essa estrutura:</p>
+        <div class="code-box">
+            <pre>
+                seletor{
+                    propriedade: valor;
+                }
+            </pre>
+        </div>
+
+        <p>exemplo completo:</p>
+        <div class="code-box">
+            <pre>
+                body{
+                    background:beige;
+                }
+            </pre>
+        </div>
+        <div class="little-box">
+            🌱Nesse exemplo
+            <br><br>
+            <ul>
+                <li><b>body</b>→ seletor</li>
+                <li><b>background</b>→ propriedade</li>
+                <li><b>beige</b>→ valor</li>
+            </ul>
+    </div>
+    </div>
+
+    <div class="card">
+        <h2>🌼conclusão</h2>
+        <p>O CSS é essencial para criar páginas bonitas, modernas e organizadas.</p>
+
+        <p>Aprender seletores, propriedades e valores é o primeiro passo para criar sites incríveis.</p>
+
+        <p>Quanto mais você praticar, mais fácil ficarà personalizar suas páginas.</p>
+    </div>
+
+    <footer><span class="hightlight">Alunos:</span><br> Jonathan Trevisan<br>Cesar Henrique</footer>
+    
+</body>
+</html>
