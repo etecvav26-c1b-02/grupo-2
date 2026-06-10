@@ -1,0 +1,528 @@
+@font-face {
+    font-family: 'cinzel';
+    src: url('fonts/Cinzel-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'crimson';
+    src: url('fonts/CrimsonText-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- NAVBAR (MANTIDA CENTRALIZADA) ---------- */
+
+/* ---------- MENU ---------- */
+
+
+
+.menu {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5rem;
+
+
+
+    padding-top: 30px;
+
+}
+
+
+
+.menu a {
+
+    position: relative;
+
+
+
+    font-family: 'cinzel';
+
+    text-decoration: none;
+
+
+
+      color:#d9c7a1;
+
+
+
+    text-shadow:
+
+        0 0 3px rgba(217,199,161,.15),
+
+        0 0 10px rgba(217,199,161,.05); 
+
+
+
+    font-size: .95rem;
+
+
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+
+
+    transition: .3s;
+
+}
+
+
+
+.menu a:hover {
+
+      color:#f0d6aa;
+
+
+
+    text-shadow:
+
+        0 0 6px rgba(240,214,170,.35),
+
+        0 0 15px rgba(240,214,170,.15);
+
+}
+
+
+
+.menu a::after{
+
+    content:"";
+
+
+
+    position:absolute;
+
+
+
+    left:50%;
+
+    bottom:-10px;
+
+
+
+    width:60px;
+
+    height:1px;
+
+
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            #c9b18b,
+
+            transparent
+
+        );
+
+
+
+    transform:translateX(-50%);
+
+
+
+    transition:.3s;
+
+}
+
+
+
+.menu a:hover::after{
+
+    width:90px;
+
+}
+
+
+
+.prox {
+
+    margin-top: 60px;
+
+    margin-bottom: 60px
+
+}
+
+
+
+.prox a {
+
+    position: relative;
+
+
+
+    font-family: 'cinzel';
+
+    text-decoration: none;
+
+
+
+      color:#d9c7a1;
+
+
+
+    text-shadow:
+
+        0 0 3px rgba(217,199,161,.15),
+
+        0 0 10px rgba(217,199,161,.05); 
+
+
+
+    font-size: .95rem;
+
+
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+
+
+    transition: .3s;
+
+}
+
+
+
+.prox a:hover {
+
+      color:#f0d6aa;
+
+
+
+    text-shadow:
+
+        0 0 6px rgba(240,214,170,.35),
+
+        0 0 15px rgba(240,214,170,.15);
+
+}
+
+
+
+.prox a::after{
+
+    content:"";
+
+
+
+    position:absolute;
+
+
+
+    left:50%;
+
+    bottom:-10px;
+
+
+
+    width:60px;
+
+    height:1px;
+
+
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            #c9b18b,
+
+            transparent
+
+        );
+
+
+
+    transform:translateX(-50%);
+
+
+
+    transition:.3s;
+
+}
+
+
+
+.prox a:hover::after{
+
+    width:90px;
+
+}
+
+.download-box{
+    margin-top:60px;
+    max-width:600px;
+}
+
+.download-btn{
+    display:inline-block;
+
+    margin-top:20px;
+    padding:14px 24px;
+
+    font-family:'cinzel';
+
+    color:#d9c7a1;
+    text-decoration:none;
+
+    border:1px solid rgba(217,199,161,.4);
+
+    background:rgba(20,20,20,.7);
+
+    transition:.3s;
+}
+
+.download-btn:hover{
+    color:#f0d6aa;
+
+    box-shadow:
+        0 0 8px rgba(240,214,170,.2),
+        0 0 20px rgba(240,214,170,.08);
+}
+
+
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ---------- BODY ---------- */
+
+body {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, .90) 0%,
+            rgba(0, 0, 0, .75) 35%,
+            rgba(0, 0, 0, .35) 70%,
+            rgba(0, 0, 0, .05) 100%),
+        url("img/9e89ed07-d56f-4fbd-8c87-23b1deaf8015.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ---------- MAIN (FORÇANDO ESQUERDA TOTAL) ---------- */
+
+main {
+    width: 100%;
+    padding: 50px 0 50px 70px; /* só margem esquerda */
+    text-align: left;
+}
+
+/* ---------- SÍMBOLO ---------- */
+
+.elden-sigil {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+
+    width: 380px;
+    height: 380px;
+
+    background-image: url("img/elden-ring-symbol.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: .18;
+    filter: drop-shadow(0 0 15px rgba(217,199,161,.15));
+    pointer-events: none;
+}
+
+/* ---------- TÍTULO / TEXTO ---------- */
+
+.title {
+    font-family: 'cinzel';
+    font-size: 3.4rem;
+    color: #d9c7a1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.h2{
+    font-family: 'cinzel';
+    font-size: 1.4rem;
+    color: #d9c7a1;
+    margin-top: 95px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.subtitle {
+    font-family: 'crimson';
+    font-style: italic;
+    color: #8d7b65;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 220px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c9b18b, transparent);
+    margin-bottom: 40px;
+}
+
+.dividerl {
+    width: 440px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c9b18b, transparent);
+    margin-bottom: 40px;
+}
+
+.text {
+    max-width: 600px;
+}
+
+.text p {
+    font-family: 'crimson';
+    color: #c7b18d;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+/* ---------- ACCORDION GRID (AGORA ESQUERDA TOTAL) ---------- */
+
+
+/* ---------- ACCORDION ---------- */
+
+.accordion {
+    width: 500px;
+    position: relative;
+    margin-top: 60px;
+}
+
+/* esconder radio */
+.accordion_toggle {
+    display: none;
+}
+
+/* aba */
+.accordion_tab {
+    display: flex;
+    align-items: center;
+
+    padding: 18px 24px;
+
+    font-family: 'cinzel';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #d9c7a1;
+
+    background: linear-gradient(90deg, rgba(15,15,15,.9), rgba(35,20,10,.8));
+
+    border-top: 1px solid rgba(217,199,161,.35);
+    border-bottom: 1px solid rgba(217,199,161,.15);
+
+    cursor: pointer;
+}
+
+/* conteúdo fechado */
+.accordion_wrapper {
+    max-height: 0;
+    overflow: hidden;
+
+    background: rgba(10,10,10,.65);
+    backdrop-filter: blur(4px);
+
+    border-left: 1px solid rgba(217,199,161,.2);
+    border-right: 1px solid rgba(217,199,161,.2);
+    border-bottom: 1px solid rgba(217,199,161,.2);
+
+    transition: max-height .4s ease, padding .4s ease;
+
+    padding: 0 24px;
+}
+
+/* aberto */
+.accordion_toggle:checked + .accordion_tab + .accordion_wrapper {
+    max-height: 300px;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+/* runas */
+.accordion_number {
+    display: contents;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    align-content: center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.accordion_title{
+
+  font-family:'cinzel';
+
+
+
+  color:#c9b18b;
+
+
+
+  letter-spacing:1px;
+
+}
+
+
+
+.accordion_text{
+
+  font-family:'crimson';
+
+
+
+  color:#b8a58a;
+
+
+
+  line-height:1.8;
+
+}
+
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    main {
+        padding-left: 25px;
+    }
+
+    .accordion_line {
+        grid-template-columns: 1fr;
+    }
+
+    .accordion {
+        width: 90vw;
+    }
+}
